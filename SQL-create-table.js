@@ -2,11 +2,11 @@
 import { sql } from './db.js'
 
 sql`
-  CREATE TABLE users (
+  CREATE TABLE moto (
       id text PRIMARY KEY,
       name character varying(255),
-      password character varying(255),
-      profile text
+      modelo character varying(255),
+      cor text
   );
 `.then(() => {
   console.log('tabela criada');

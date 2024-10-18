@@ -4,9 +4,9 @@ import { Database } from './database-users.js';
 const server = fastify();
 const database = new Database;
 
-server.post('/users', async (request, reply) => {
+server.post('/moto', async (request, reply) => {
   const body = request.body;
-  await database.createUser(body);
+  await database.createMoto(body);
   return 201;
 });
 
